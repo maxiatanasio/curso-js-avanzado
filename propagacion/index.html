@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Eventos propagation</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light mb-4">
+        <a class="navbar-brand" href="#">
+            <span id="app-name">Eventos - Propagation</span>
+        </a>
+    </nav>
+    <div class="container card">
+        <div class="col-12 pt-3 pb-3">
+            <h2>Bubbles</h2>
+            <div class="p-3 bg-primary" id="padre-container">
+                <p class="text-white">Click padre: <span id="padre">0</span></p>
+                <div class="p-3 bg-danger" id="hijo-container">
+                    <p class="text-white">Click hijo: <span id="hijo">0</span></p>
+                    <div class="p-3 bg-success" id="nieto-container">
+                        <p class="text-white">Click nieto: <span id="nieto">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 pt-3 pb-3">
+            <h2>Capturing</h2>
+            <div class="p-3 bg-primary" id="padre2-container">
+                <p class="text-white">Click padre: <span id="padre2">0</span></p>
+                <div class="p-3 bg-danger" id="hijo2-container">
+                    <p class="text-white">Click hijo: <span id="hijo2">0</span></p>
+                    <div class="p-3 bg-success" id="nieto2-container">
+                        <p class="text-white">Click nieto: <span id="nieto2">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
